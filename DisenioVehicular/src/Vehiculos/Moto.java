@@ -24,40 +24,33 @@ public class Moto
 	}
 	
 	// Getters
-	public String dimeLargo()
+	public String dimeDatosGenerales()
 	{
-		return "El largo de la moto es de: "+largo+" centimetros";
+		return "El largo de la moto, de color "+color+", es de "+largo+" centimetros, con un ancho de "+ancho+" centimetros, cuenta con "+ruedas+" ruedas y pesa un total de "+pesoTotal+" kilogramos";
 	}
 	
-	public String dimeAncho()
+	public String dimeRetrovisores()
 	{
-		return "El ancho de la moto es de: "+ancho+" centimetros";
+		if(retrovisores==true)
+		{
+			return "La moto tiene retrovisores";
+		}else
+		{
+			return "La moto no tiene retrovisores";
+		}
 	}
 	
-	public String dimeRuedas()
+	public String dimeEscape()
 	{
-		return "El numero de ruedas es: "+ruedas;
+		if(escapeSilencioso==true)
+		{
+			return "La moto tiene escape silencioso";
+		}else
+		{
+			return "La moto no tiene escape silencioso";
+		}
 	}
-	
-	public String dimeColor()
-	{
-		return "El color la moto es: "+color;
-	}
-	
-	public String dimeAsiento()
-	{
-		return "La moto cuenta con retrovisores: "+retrovisores;
-	}
-	
-	public String dimeClimatizador()
-	{
-		return "La moto cuenta con escape silencioso: "+escapeSilencioso;
-	}
-	
-	public String dimePesoTotal()
-	{
-		return "El peso total de la moto es: "+pesoTotal+" kilogramos";
-	}
+
 	
 	// Setters
 	public void estableceColor(String colorMoto)

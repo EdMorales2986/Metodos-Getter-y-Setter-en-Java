@@ -24,39 +24,31 @@ public class Coche
 	}
 	
 	// Getters
-	public String dimeLargo()
+	public String dimeDatosGenerales()
 	{
-		return "El largo del coche es de: "+largo+" metros";
-	}
-	
-	public String dimeAncho()
-	{
-		return "El ancho del coche es de: "+ancho+" metros";
-	}
-	
-	public String dimeRuedas()
-	{
-		return "El numero de ruedas es: "+ruedas;
-	}
-	
-	public String dimeColor()
-	{
-		return "El color del coche es: "+color;
+		return "El largo del coche, de color "+color+", es de "+largo+" metros, con un ancho de "+ancho+" metros, cuenta con "+ruedas+" ruedas y pesa un total de "+pesoTotal+" kilogrmaos";
 	}
 	
 	public String dimeAsiento()
 	{
-		return "El coche cuenta con asientos de cuero: "+asientoCuero;
+		if(asientoCuero==true)
+		{
+			return "El coche tiene asientos de cuero";
+		}else
+		{
+			return "El coche no tiene asientos de cuero";
+		}
 	}
 	
 	public String dimeClimatizador()
 	{
-		return "El coche cuenta con climatizador: "+climatizador;
-	}
-	
-	public String dimePesoTotal()
-	{
-		return "El peso total del coche es: "+pesoTotal+" kilogramos";
+		if(climatizador==true)
+		{
+			return "El coche tiene climatizador";
+		}else
+		{
+			return "El coche no tiene climatizador";
+		}
 	}
 	
 	// Setters
